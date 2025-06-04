@@ -13,29 +13,32 @@
   <main>
     <section>
       <h2 class="emoji">📌 O que é VoIP?</h2>
-      <p>VoIP (Voz sobre Protocolo de Internet) é uma tecnologia que permite fazer ligações de voz usando a internet, em vez de linhas telefônicas tradicionais (como as analógicas ou digitais do tipo PABX).</p>
+      <p>VoIP (Voz sobre Protocolo de Internet) é uma tecnologia que permite a transmissão de voz pela internet, em vez de utilizar linhas telefônicas tradicionais. Essa inovação substitui sistemas como PABX analógicos ou digitais por soluções mais flexíveis, digitais e integradas.</p>
     </section>
 
     <section>
       <h2 class="emoji">🧠 Como funciona o VoIP? (Passo a passo detalhado)</h2>
       <ol>
-        <li><strong>Captura da voz</strong>: O usuário fala normalmente em um microfone. Essa voz é um sinal analógico.</li>
-        <li><strong>Conversão analógico → digital (ADC)</strong>: A voz é transformada em dados digitais por um Conversor Analógico-Digital.</li>
-        <li><strong>Compressão e codificação</strong>: Os dados são comprimidos e codificados por um codec de áudio (G.711, G.729, Opus).</li>
-        <li><strong>Divisão em pacotes</strong>: Os dados são divididos em pacotes IP contendo informações como voz, IPs, sequência, checksum.</li>
-        <li><strong>Transmissão pela internet</strong>: Os pacotes são enviados via RTP, UDP e SIP/H.323.</li>
-        <li><strong>Recepção e reordenação</strong>: No destino, os pacotes são reorganizados.</li>
-        <li><strong>Descompressão e decodificação</strong>: Os dados são convertidos novamente para áudio digital.</li>
-        <li><strong>Conversão digital → analógico (DAC)</strong>: O som digital vira som analógico que é reproduzido.</li>
+        <li><strong>Captura da voz</strong>: O usuário fala através de um microfone embutido em um celular, computador, headset ou telefone IP. O som captado é analógico, ou seja, ondas sonoras contínuas.</li>
+        <li><strong>Conversão analógico → digital (ADC)</strong>: Um conversor transforma essas ondas sonoras em dados digitais, gerando amostras numéricas da voz.</li>
+        <li><strong>Compressão e codificação</strong>: Os dados digitais são compactados por codecs como G.711, G.729 ou Opus, para economizar largura de banda mantendo a qualidade.</li>
+        <li><strong>Divisão em pacotes</strong>: A informação codificada é fragmentada em pacotes IP, contendo dados de voz, endereços IP, ordem de sequência e verificação de integridade (checksum).</li>
+        <li><strong>Transmissão pela internet</strong>: Esses pacotes viajam pela rede usando protocolos como:
+          <ul>
+            <li><strong>RTP (Real-time Transport Protocol)</strong>: Para enviar o áudio em tempo real.</li>
+            <li><strong>UDP (User Datagram Protocol)</strong>: Para entrega rápida dos pacotes sem confirmação.</li>
+            <li><strong>SIP (Session Initiation Protocol) ou H.323</strong>: Para estabelecer, gerenciar e finalizar as chamadas.</li>
+          </ul>
+        </li>
+        <li><strong>Recepção e reordenação</strong>: No destino, os pacotes são reorganizados na ordem correta, mesmo que tenham chegado fora de sequência.</li>
+        <li><strong>Descompressão e decodificação</strong>: Os dados comprimidos são decodificados pelo mesmo codec usado na origem.</li>
+        <li><strong>Conversão digital → analógico (DAC)</strong>: Um conversor transforma os dados de volta em som, que é reproduzido em alto-falantes ou fones de ouvido.</li>
       </ol>
     </section>
 
     <section>
       <h2 class="emoji">🔁 Exemplo do ciclo:</h2>
-      <p>Você fala “Oi, tudo bem?”</p>
-      <p>Sua fala é convertida em dados, comprimida, empacotada.</p>
-      <p>Os pacotes vão pela internet até o destinatário.</p>
-      <p>No outro lado, tudo é remontado, decodificado e tocado.</p>
+      <p>Você fala “Oi, tudo bem?” → Sua fala vira dados digitais → É comprimida e empacotada → Os pacotes viajam pela internet → Chegam ao destino → São reordenados → Decodificados → E reproduzidos como som.</p>
     </section>
 
     <section>
@@ -48,12 +51,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>Codec</td><td>Codifica/decodifica áudio</td></tr>
-          <tr><td>SIP</td><td>Gerencia chamadas</td></tr>
-          <tr><td>RTP</td><td>Transmite áudio</td></tr>
-          <tr><td>Gateway VoIP</td><td>Conecta VoIP a redes telefônicas tradicionais</td></tr>
-          <tr><td>Softphone</td><td>App que simula um telefone</td></tr>
-          <tr><td>ATA</td><td>Conecta telefones analógicos à internet</td></tr>
+          <tr><td>Codec</td><td>Codifica e decodifica o áudio digital.</td></tr>
+          <tr><td>SIP</td><td>Gerencia sessões de chamadas (início, término, registro).</td></tr>
+          <tr><td>RTP</td><td>Transporta o áudio em tempo real.</td></tr>
+          <tr><td>Gateway VoIP</td><td>Faz a ponte entre redes VoIP e redes telefônicas convencionais.</td></tr>
+          <tr><td>Softphone</td><td>Aplicativo que simula um telefone em PCs e smartphones.</td></tr>
+          <tr><td>ATA</td><td>Permite conectar telefones analógicos a redes VoIP.</td></tr>
         </tbody>
       </table>
     </section>
@@ -61,20 +64,31 @@
     <section>
       <h2 class="emoji">✅ Vantagens do VoIP</h2>
       <ul>
-        <li>Custo menor (especialmente para ligações interurbanas/internacionais)</li>
-        <li>Integração com sistemas digitais (chatbots, CRM)</li>
-        <li>Mobilidade (ligue de qualquer lugar com internet)</li>
-        <li>Recursos avançados (gravação, videochamadas, transferência de chamadas)</li>
+        <li>Redução de custos em chamadas, especialmente internacionais.</li>
+        <li>Integração com ferramentas digitais como CRM, chatbots e gravação.</li>
+        <li>Mobilidade e flexibilidade — pode-se atender de qualquer lugar com internet.</li>
+        <li>Recursos avançados como videoconferência, transferência e gravação de chamadas.</li>
       </ul>
     </section>
 
     <section>
       <h2 class="emoji">❌ Desvantagens do VoIP</h2>
       <ul>
-        <li>Depende da qualidade da internet</li>
-        <li>Pode ter latência, jitter e perda de pacotes</li>
-        <li>Requer energia elétrica (sem internet ou energia, não funciona)</li>
-        <li>Pode ter vulnerabilidades de segurança se mal configurado</li>
+        <li>Qualidade depende diretamente da estabilidade e largura de banda da conexão.</li>
+        <li>Susceptível a latência (atrasos), jitter (variações) e perda de pacotes.</li>
+        <li>Depende de energia elétrica e conexão ativa com a internet.</li>
+        <li>Requer cuidados com segurança para evitar ataques e invasões.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="emoji">📚 Referências</h2>
+      <ul>
+        <li><a href="https://www.cisco.com/c/pt_br/solutions/small-business/resource-center/voip.html" target="_blank">Cisco – O que é VoIP?</a></li>
+        <li><a href="https://www.voip-info.org/what-is-voip/" target="_blank">VoIP Info – What is VoIP?</a></li>
+        <li><a href="https://www.techtudo.com.br/listas/2021/03/voip-o-que-e-e-como-funciona-tecnologia-para-ligacoes-via-internet.ghtml" target="_blank">TechTudo – O que é VoIP?</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Voice_over_IP" target="_blank">Wikipedia – Voice over IP</a></li>
+        <li><a href="https://www.itu.int/en/ITU-T/gsi/ipt/Pages/default.aspx" target="_blank">ITU-T – Protocolos de Telecomunicações</a></li>
       </ul>
     </section>
   </main>
