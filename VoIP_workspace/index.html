@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações sobre VoIP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📞 Informações sobre VoIP</h1>
+  </header>
+  <main>
+    <section>
+      <h2 class="emoji">📌 O que é VoIP?</h2>
+      <p>VoIP (Voz sobre Protocolo de Internet) é uma tecnologia que permite fazer ligações de voz usando a internet, em vez de linhas telefônicas tradicionais (como as analógicas ou digitais do tipo PABX).</p>
+    </section>
+
+    <section>
+      <h2 class="emoji">🧠 Como funciona o VoIP? (Passo a passo detalhado)</h2>
+      <ol>
+        <li><strong>Captura da voz</strong>: O usuário fala normalmente em um microfone. Essa voz é um sinal analógico.</li>
+        <li><strong>Conversão analógico → digital (ADC)</strong>: A voz é transformada em dados digitais por um Conversor Analógico-Digital.</li>
+        <li><strong>Compressão e codificação</strong>: Os dados são comprimidos e codificados por um codec de áudio (G.711, G.729, Opus).</li>
+        <li><strong>Divisão em pacotes</strong>: Os dados são divididos em pacotes IP contendo informações como voz, IPs, sequência, checksum.</li>
+        <li><strong>Transmissão pela internet</strong>: Os pacotes são enviados via RTP, UDP e SIP/H.323.</li>
+        <li><strong>Recepção e reordenação</strong>: No destino, os pacotes são reorganizados.</li>
+        <li><strong>Descompressão e decodificação</strong>: Os dados são convertidos novamente para áudio digital.</li>
+        <li><strong>Conversão digital → analógico (DAC)</strong>: O som digital vira som analógico que é reproduzido.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="emoji">🔁 Exemplo do ciclo:</h2>
+      <p>Você fala “Oi, tudo bem?”</p>
+      <p>Sua fala é convertida em dados, comprimida, empacotada.</p>
+      <p>Os pacotes vão pela internet até o destinatário.</p>
+      <p>No outro lado, tudo é remontado, decodificado e tocado.</p>
+    </section>
+
+    <section>
+      <h2 class="emoji">🔧 Componentes usados no VoIP</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Componente</th>
+            <th>Função</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Codec</td><td>Codifica/decodifica áudio</td></tr>
+          <tr><td>SIP</td><td>Gerencia chamadas</td></tr>
+          <tr><td>RTP</td><td>Transmite áudio</td></tr>
+          <tr><td>Gateway VoIP</td><td>Conecta VoIP a redes telefônicas tradicionais</td></tr>
+          <tr><td>Softphone</td><td>App que simula um telefone</td></tr>
+          <tr><td>ATA</td><td>Conecta telefones analógicos à internet</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2 class="emoji">✅ Vantagens do VoIP</h2>
+      <ul>
+        <li>Custo menor (especialmente para ligações interurbanas/internacionais)</li>
+        <li>Integração com sistemas digitais (chatbots, CRM)</li>
+        <li>Mobilidade (ligue de qualquer lugar com internet)</li>
+        <li>Recursos avançados (gravação, videochamadas, transferência de chamadas)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="emoji">❌ Desvantagens do VoIP</h2>
+      <ul>
+        <li>Depende da qualidade da internet</li>
+        <li>Pode ter latência, jitter e perda de pacotes</li>
+        <li>Requer energia elétrica (sem internet ou energia, não funciona)</li>
+        <li>Pode ter vulnerabilidades de segurança se mal configurado</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
